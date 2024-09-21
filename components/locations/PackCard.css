@@ -1,0 +1,92 @@
+/* Base styles for the card */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.t-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cont {
+  padding: 15px;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.name i {
+  margin-right: 5px;
+  color: #007BFF;
+}
+
+.abt {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #28a745;
+  margin-bottom: 15px;
+}
+
+.go-btn {
+  text-align: center;
+}
+
+.gobtn {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.gobtn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .card {
+    margin: 10px;
+  }
+
+  .name {
+    font-size: 1rem;
+  }
+
+  .abt {
+    font-size: 0.9rem;
+  }
+
+  .price {
+    font-size: 1rem;
+  }
+
+  .gobtn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}

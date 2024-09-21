@@ -1,0 +1,74 @@
+/* PackageCard.css */
+.card.module {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  width: 100%;
+  max-width: 350px; /* Set a maximum width for larger screens */
+  margin: 10px auto;
+}
+
+.card.module:hover {
+  transform: scale(1.05);
+}
+
+.img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cont {
+  padding: 16px;
+}
+
+.name {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.abt {
+  font-size: 0.9em;
+  margin-bottom: 8px;
+}
+
+.price {
+  font-size: 1.1em;
+  color: #2d2d2d;
+  margin-bottom: 12px;
+}
+
+.go-btn {
+  text-align: center;
+}
+
+.gobtn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.gobtn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card.module {
+    max-width: 90%; /* Increase width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .card.module {
+    max-width: 100%; /* Full width for very small screens */
+  }
+}

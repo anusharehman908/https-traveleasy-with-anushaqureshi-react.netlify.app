@@ -1,0 +1,94 @@
+/* Base styles for desktop */
+.container5 {
+  padding: 20px;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.rowlast {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contimg img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.box {
+  text-align: left;
+}
+
+.box h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.box hr {
+  border: 1px solid #000;
+  margin-bottom: 50px;
+}
+
+.box p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+.cont-btn {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cont-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .rowlast {
+    flex-direction: column;
+  }
+
+  .contimg img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .box {
+    text-align: center;
+  }
+
+  .box h2 {
+    font-size: 1.2rem;
+  }
+
+  .box p {
+    font-size: 0.9rem;
+  }
+
+  .cont-btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
